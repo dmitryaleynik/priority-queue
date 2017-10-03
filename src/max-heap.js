@@ -46,4 +46,21 @@ class MaxHeap {
 	}
 }
 
+
+
+var inner;
+function outer(){
+    var local = 1;
+
+    return   function(){
+        return local;
+    };
+}
+
+ outer();
+
+console.log(outer()());
+
+
+
 module.exports = MaxHeap;
